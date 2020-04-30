@@ -17,7 +17,7 @@ export const PostContext = createContext({
 });
 
 function App() {
-  const [user, setUser] = useState("Milan");
+  const [user, setUser] = useState("");
   const initialPostState = useContext(PostContext);
   const [state, dispatch] = useReducer(postReducer, initialPostState);
   // const [posts, setPosts] = useState([]);
